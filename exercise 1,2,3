@@ -1,0 +1,42 @@
+#exercise 1
+import pygame
+WHITE = (255, 255, 255)
+BLACK=(0,0,0)
+RED=(255,0,0)
+GREEN=(0,255,0)
+BLUE=(0,0,255)
+LIGHTBLUE=(0,236,236)
+ORANGE=(255,128,0)
+pygame.display.set_mode(size=(0,0), flags=0, depth=0, display=0)
+scn_width=640
+scn_height=480
+screen=pygame.display.set_mode ((scn_width,scn_height))
+screen.fill(ORANGE)
+
+pygame.draw.polygon(screen, RED,[(200, 240), (400, 240), (300, 175)])
+pygame.draw.rect(screen, WHITE,(200, 240, 200, 175))
+pygame.draw.rect(screen, BLACK,(275, 315, 50, 100))
+pygame.draw.circle(screen, BLUE,[240,290],20)
+pygame.draw.circle(screen, BLUE,[360,290],20)
+
+pygame.display.flip()
+
+#exercise 2
+import pygame
+WHITE = (255, 255, 255)
+BLACK=(0,0,0)
+RED=(255,0,0)
+GREEN=(0,255,0)
+BLUE=(0,0,255)
+LIGHTBLUE=(0,236,236)
+ORANGE=(255,128,0)
+pygame.display.set_mode(size=(0,0), flags=0, depth=0, display=0)
+scn_width=800
+scn_height=500
+screen=pygame.display.set_mode ((scn_width,scn_height))
+screen.fill(WHITE)
+
+for x in range(30):
+  pygame.draw.ellipse(screen, BLACK,[x*25, 200, 35, 10],3)
+
+pygame.display.flip()
